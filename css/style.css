@@ -1,14 +1,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap');
 
+:root {
+    --bg-gray: #ddd;
+    --color-primary: #4d41C0;
+    --text-gray: #4a4a4a;
+    --white: #fff;
+}
 * {
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif;
+}
+
+h1, h2, h3,h4, h4, h5, h6 {
+    margin: 0;
 }
 
 html, body {
     background-color: #E8E8E8;
 }
 header {
+    height: 60px;
+    display: flex;
+    align-items: center;
     background-color: #4D41C0;
     color: #FFFFFF;
 }
@@ -18,7 +31,52 @@ nav {
     align-items: center;
     justify-content: space-between;
 }
+
+nav h1 {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+nav a {
+    font-size: 12px;
+    font-weight: 700;
+}
+
 a, a:hover {
     text-decoration: none;
     color: unset;
+}
+
+.dsmovie-contact-container {
+    display: flex;
+    align-items: center;
+}
+
+.dsmovie-contact-container img {
+    margin-right: 10px;
+}
+
+#dsmovie-card-list {
+    padding: 40px 0;
+}
+
+.dsmovie-card {
+    width: 360px;
+    background-color: var(--white);
+}
+
+.dsmovie-card img {
+    width: 100%;
+}
+
+.dsmovie-card-description {
+    padding: 10px 0 20px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: var(--text-gray);
+}
+
+.dsmovie-card-description h3 {
+    margin-bottom: 25px;
 }
